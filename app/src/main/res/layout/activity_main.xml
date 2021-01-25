@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:gravity="center">
+
+        <TextView
+                android:id="@+id/txt_hello"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="WITAMY"/>
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/txt_password"
+                android:hint="Numer pesel"/>
+        <TextView
+                android:id="@+id/txt_correct_pesel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:text="Niepoprawny numer pesel." android:textColor="#911515"/>
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="SPRAWDŹ"
+                android:onClick="sayHi"/>
+        <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text=""/>
+        <TextView
+                android:id="@+id/txt_medical_test_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:text=""/>
+        <TextView
+                android:id="@+id/txt_result_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:text=""/>
+        <TextView
+                android:id="@+id/txt_medical_test_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text=""/>
+        <TextView
+                android:id="@+id/txt_medical_test_method"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text=""/>
+        <TextView
+                android:id="@+id/txt_collect_method"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text=""/>
+        <TextView
+                android:id="@+id/txt_medical_test_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text=""/>
+        <TextView
+                android:id="@+id/txt_medical_test_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text=""/>
+
+    </LinearLayout>
+</RelativeLayout>
